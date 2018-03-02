@@ -14,7 +14,7 @@ var app = new Vue({
   methods: {
 
     splash: function() {
-      this.current = "images/splash1.jpg";
+      this.current = "splash1.jpg";
       this.number = 1;
       // return console.log("hello!!")
       return this.current;
@@ -22,19 +22,19 @@ var app = new Vue({
     },
 
     firstOpt: function() {
-      this.current = "images/splash1.jpg";
+      this.current = "splash1.jpg";
       this.number = 1;
       // return this.current;
     },
 
     secondOpt: function() {
-      this.current = "images/splash2.jpg";
+      this.current = "splash2.jpg";
       this.number = 2;
       // return this.current;
     },
 
     thirdOpt: function() {
-      this.current = "images/splash3.jpg";
+      this.current = "splash3.jpg";
       this.number = 3;
       // return this.current;
     },
