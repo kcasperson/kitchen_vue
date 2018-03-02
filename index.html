@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <title>Kitchen Themes</title>
+  </head>
+  <body>
+
+    <div class="blurb">
+    <div class="contain">
+
+      <h1> Help Me Pick a Kitchen </h1>
+
+    <div id="app">
+
+        <h2> Which Kitchen? </h2>
+        <!-- <img v-bind:src="current.img" v-bind:alt="current.alt"> -->
+
+        <p>
+          <button v-on:click="firstOpt">Classy in White</button>
+          <button v-on:click="secondOpt">Marbles for You</button>
+          <button v-on:click="thirdOpt">Modern Farm</button>
+        </p>
+
+        <img v-bind:src=current height="600px">
+        <h3>Feedback</h3>
+        <br/>
+
+       <form v-on:submit.prevent="addComment">
+         <p>
+         <input v-model="addedName" placeholder="Name"></p>
+         <textarea v-model="addedComment"></textarea>
+         <br/>
+         <button type="submit">Comment</button>
+       </form>
+
+       <h3>Comments</h3>
+       <div v-for="comment in comments[number]">
+         <hr>
+         <p>{{comment.text}}</p>
+         <p><i>-- {{comment.author}}</i></p>
+         <p><i> {{comment.date}} {{comment.time}}</i></p>
+       </div>
+
+      <footer>
+        <a href="https://github.com/kcasperson/kitchen_vue">Access to Git Hub Repository</a>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+      <script text="type/javascript" src="script.js">
+      </script>
+
+      </div>
+      <br style="clear: both;" class="LeaveThisHere"></div>
+      </div>
+
+</body>
+</html>
